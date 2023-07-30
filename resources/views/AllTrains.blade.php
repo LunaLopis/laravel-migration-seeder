@@ -16,11 +16,9 @@
 </head>
 
 <body>
-    <div class="text-center">
-        <h1>Treni oggi</h1>
+    <div>
+        <h1>Treni</h1>
     </div>
-    <a href="{{ route('allTrains') }}">Tutti i treni</a>
-    <a href="{{ route('companies') }}">Aziende</a>
     <div class="container">
         <div class="row">
              @foreach ($trains as $train)

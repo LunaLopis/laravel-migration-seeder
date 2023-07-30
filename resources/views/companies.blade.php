@@ -16,22 +16,20 @@
 </head>
 
 <body>
-    <div class="text-center">
-        <h1>Treni oggi</h1>
+    <div>
+        <h1>aziende</h1>
     </div>
-    <a href="{{ route('allTrains') }}">Tutti i treni</a>
-    <a href="{{ route('companies') }}">Aziende</a>
     <div class="container">
         <div class="row">
-             @foreach ($trains as $train)
+             @foreach ($companies as $company)
                 <div class="col col-lg-2 col-md-4 col-sm-12">
                     <a href="">
                         <div class="card mb-3 " >
                             <div class="card-body">
-                                <h5 class="card-title">{{$train->azienda}}</h5>
-                                <h5 class="card-title">{{$train->stazione_partenza}}</h5>
-                                <h5 class="card-title">{{$train->data_partenza}}</h5>
-                                <h5 class="card-title">{{$train->orario_partenza}}</h5>
+                                <h5 class="card-title">{{$company->nome}}</h5>
+                                <h5 class="card-title">{{$company->descrizione}}</h5>
+                                <h5 class="card-title">{{$company->indirizzo}}</h5>
+                                <h5 class="card-title">{{$company->email}}</h5>
                             </div>
                         </div>
                     </a>
